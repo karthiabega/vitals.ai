@@ -3,8 +3,8 @@ const Logo = ({ className = "" }: { className?: string }) => (
   <div className={`flex items-center gap-2.5 ${className}`}>
     {/* ECG / heartbeat waveform */}
     <svg
-      width="44"
-      height="30"
+      width="58"
+      height="40"
       viewBox="0 0 44 30"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -22,9 +22,9 @@ const Logo = ({ className = "" }: { className?: string }) => (
     {/* Wordmark */}
     <span
       className="font-heading font-bold tracking-tight leading-none select-none"
-      style={{ fontSize: "1.2rem" }}
+      style={{ fontSize: "1.5rem" }}
     >
-      <span className="text-foreground">thevitals</span>
+      <span className="text-foreground">TheVitals</span>
       <span className="text-primary">.ai</span>
     </span>
   </div>

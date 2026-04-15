@@ -1,9 +1,15 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send, CheckCircle, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+
+// ── EmailJS config ──
+const EMAILJS_SERVICE_ID  = "service_0ru6k1f";
+const EMAILJS_TEMPLATE_ID = "template_hma1pqv";
+const EMAILJS_PUBLIC_KEY  = "2HFHTb2UZNEth5hF9";
 
 const serviceOptions = [
   "Disease Classification",
@@ -25,8 +31,8 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "+91 98765 43210",
-    href: "tel:+919876543210",
+    value: "+91 89789 29292",
+    href: "tel:+918978929292",
   },
   {
     icon: MapPin,
@@ -50,6 +56,7 @@ const Contact = () => {
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -57,13 +64,30 @@ const Contact = () => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
+    setError("");
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          from_name: form.name,
+          organization: form.organization,
+          reply_to: form.email,
+          phone: form.phone,
+          service: form.service,
+          message: form.message,
+        },
+        EMAILJS_PUBLIC_KEY
+      );
       setSubmitted(true);
-    }, 1200);
+    } catch {
+      setError("Something went wrong. Please try again or email us directly.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -294,6 +318,12 @@ const Contact = () => {
                         className={`${inputBase} resize-none`}
                       />
                     </div>
+
+                    {error && (
+                      <p className="text-sm text-red-500 bg-red-500/10 border border-red-500/20 rounded-lg px-4 py-3">
+                        {error}
+                      </p>
+                    )}
 
                     <button
                       type="submit"
