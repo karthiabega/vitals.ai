@@ -158,7 +158,7 @@ export const useCasesData: Record<UseCaseSlug, UseCase> = {
     iconName: "Pill",
     tagline: "Ensuring Treatment Completion Across Populations of Millions",
     overview:
-      "Medication non-adherence is a silent crisis in public health—especially for chronic disease management and communicable disease treatment like TB-DOTS. Our AI-driven adherence platform monitors patient treatment journeys at population scale, proactively identifies at-risk patients, and deploys autonomous interventions to ensure treatment completion.",
+      "Medication non-adherence is a silent crisis in health—especially for chronic disease management and communicable disease treatment like TB-DOTS. Our AI-driven adherence platform monitors patient treatment journeys at population scale, proactively identifies at-risk patients, and deploys autonomous interventions to ensure treatment completion.",
     features: [
       {
         title: "Population-Scale Monitoring",
