@@ -78,7 +78,7 @@ const APHOPSection = () => {
             Solutions
           </span>
           <h2 className="font-heading text-3xl md:text-5xl font-bold mb-6 max-w-4xl mx-auto">
-            The Autonomous Public Health{" "}
+            The Autonomous Health{" "}
             <span className="text-gradient">Operations Platform</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">

@@ -5,18 +5,19 @@ import { Link, useLocation } from "react-router-dom";
 import Logo from "./Logo";
 
 const hashLinks = [
-  { label: "Platform", href: "/#platform" },
-  { label: "Solutions", href: "/#solutions" },
-  { label: "Consortium", href: "/#consortium" },
-  { label: "Case Study", href: "/#case-study" },
+  { label: "Pipeline", href: "/#aphop-pipeline", id: "aphop-pipeline" },
+  { label: "Solutions", href: "/#solutions", id: "solutions" },
+  { label: "Platform", href: "/#platform", id: "platform" },
+  { label: "Consortium", href: "/#consortium", id: "consortium" },
+  { label: "Case Study", href: "/#case-study", id: "case-study" },
 ];
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState<string>("");
   const location = useLocation();
 
-  const isHome    = location.pathname === "/";
   const isContact = location.pathname === "/contact";
 
   useEffect(() => {
@@ -24,6 +25,43 @@ const Navbar = () => {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  // Track active section via scroll position
+  useEffect(() => {
+    if (location.pathname !== "/") {
+      setActiveSection("");
+      return;
+    }
+
+    const updateActive = () => {
+      const scrollY = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const docHeight = document.documentElement.scrollHeight;
+
+      // If scrolled to very bottom of page, activate last section
+      if (scrollY + windowHeight >= docHeight - 50) {
+        setActiveSection(hashLinks[hashLinks.length - 1].id);
+        return;
+      }
+
+      // Trigger point: 40% down from viewport top (accounts for fixed navbar)
+      const triggerPoint = scrollY + windowHeight * 0.4;
+
+      // Iterate in page order — last section whose top <= triggerPoint wins
+      let current = "";
+      for (const { id } of hashLinks) {
+        const el = document.getElementById(id);
+        if (!el) continue;
+        if (el.offsetTop <= triggerPoint) current = id;
+      }
+
+      setActiveSection(current);
+    };
+
+    updateActive(); // run immediately so initial section is highlighted
+    window.addEventListener("scroll", updateActive, { passive: true });
+    return () => window.removeEventListener("scroll", updateActive);
+  }, [location.pathname]);
 
   // Close mobile menu on route change
   useEffect(() => setMobileOpen(false), [location.pathname]);
@@ -61,10 +99,10 @@ const Navbar = () => {
             <a
               key={link.label}
               href={link.href}
-              className={linkClass(isHome)}
+              className={linkClass(activeSection === link.id)}
             >
               {link.label}
-              {activeDot(isHome)}
+              {activeDot(activeSection === link.id)}
             </a>
           ))}
           <Link to="/contact" className={linkClass(isContact)}>
@@ -110,7 +148,7 @@ const Navbar = () => {
                   key={link.label}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className={`font-medium transition-colors ${isHome ? "text-primary" : "text-foreground hover:text-primary"}`}
+                  className={`font-medium transition-colors ${activeSection === link.id ? "text-primary" : "text-foreground hover:text-primary"}`}
                 >
                   {link.label}
                 </a>

@@ -134,7 +134,7 @@ const HeroSection = () => {
           className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold leading-tight max-w-5xl mx-auto mb-8"
         >
           The Agentic Layer for{" "}
-          <span className="text-gradient">Public Health</span>{" "}
+          <span className="text-gradient">Health</span>{" "}
           and Governance.
         </motion.h1>
 
