@@ -168,7 +168,7 @@ const processingEngine = [
     items: [
       "Risk Score Calculation (ORI)",
       "SDOH Overlay",
-      "Public Health Quality Indicators",
+      "Health Quality Indicators",
       "Entity Resolution",
     ],
   },

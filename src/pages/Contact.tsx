@@ -120,7 +120,7 @@ const Contact = () => {
               <span className="text-gradient">Together</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Ready to transform India's public health infrastructure? Our team of
+              Ready to transform India's  health infrastructure? Our team of
               sovereign AI specialists is here to help design the right solution for your
               state.
             </p>

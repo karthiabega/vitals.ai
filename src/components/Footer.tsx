@@ -49,7 +49,7 @@ const Footer = () => {
               <Logo className="mb-5" />
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-xs mb-5">
-              Architecting sovereign AI infrastructure for India's public health and
+              Architecting sovereign AI infrastructure for India's  health and
               governance ecosystem.
             </p>
             <div className="flex flex-col gap-2.5 text-sm text-muted-foreground">
@@ -108,7 +108,7 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-semibold text-foreground mb-5">Get in Touch</h4>
             <p className="text-sm text-muted-foreground mb-5 leading-relaxed">
-              Ready to transform public health infrastructure for your state?
+              Ready to transform  health infrastructure for your state?
             </p>
             <Link
               to="/contact"

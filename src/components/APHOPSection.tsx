@@ -32,7 +32,7 @@ const capabilities: Capability[] = [
     title: "Autonomous Triage",
     shortText: "Real-Time Anomaly Detection",
     detail:
-      "S, P, and L reporting streams fused with environmental data detect anomalies before they scale into public health crises — zero manual intervention.",
+      "S, P, and L reporting streams fused with environmental data detect anomalies before they scale into  health crises — zero manual intervention.",
     iconAnim: "pulse",
     gradientFront: "from-primary/15 to-amber-500/8",
     gradientBack: "from-amber-900/20 via-card to-card",

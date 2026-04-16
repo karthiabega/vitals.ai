@@ -64,7 +64,7 @@ const stats = [
     prefix: "",
     suffix: "",
     label: "Turnkey Projects Delivered",
-    sublabel: "End-to-end public health deployments",
+    sublabel: "End-to-end  health deployments",
     iconBg: "from-primary/20 to-emerald-500/10",
     delay: 0,
   },

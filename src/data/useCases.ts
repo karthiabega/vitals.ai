@@ -24,7 +24,7 @@ export const useCasesData: Record<UseCaseSlug, UseCase> = {
     iconName: "Activity",
     tagline: "AI-Powered Multi-Disease Diagnostic Intelligence at Population Scale",
     overview:
-      "Our disease classification engine leverages multi-modal AI models trained on India's IDSP data streams, clinical records, and environmental indicators. We transform heterogeneous health data into precise, actionable disease classifications across 30+ disease categories—enabling public health departments to respond proactively rather than reactively.",
+      "Our disease classification engine leverages multi-modal AI models trained on India's IDSP data streams, clinical records, and environmental indicators. We transform heterogeneous health data into precise, actionable disease classifications across 30+ disease categories—enabling  health departments to respond proactively rather than reactively.",
     features: [
       {
         title: "Multi-Disease ICD-11 Mapping",
@@ -108,7 +108,7 @@ export const useCasesData: Record<UseCaseSlug, UseCase> = {
       {
         title: "14-Day Prediction Window",
         description:
-          "Advanced time-series forecasting models provide a 14-day early warning window—critical for preventive public health action.",
+          "Advanced time-series forecasting models provide a 14-day early warning window—critical for preventive  health action.",
         iconName: "Calendar",
       },
       {
