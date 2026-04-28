@@ -127,7 +127,7 @@ const Footer = () => {
 
           {/* Social icons */}
           <div className="flex items-center gap-4">
-            <a href="#" aria-label="Instagram" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="https://www.instagram.com/thevitalsai/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-muted-foreground hover:text-primary transition-colors">
               <InstagramIcon />
             </a>
             <a href="https://www.linkedin.com/company/114723977/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-muted-foreground hover:text-primary transition-colors">
