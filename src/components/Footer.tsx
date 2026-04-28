@@ -31,9 +31,10 @@ const solutionLinks = [
 ];
 
 const platformLinks = [
-  { label: "Agentic AI", href: "/#platform" },
-  { label: "APHOP", href: "/#solutions" },
   { label: "Consortium", href: "/#consortium" },
+  { label: "APHOP", href: "/#solutions" },
+  { label: "Pipeline", href: "/#aphop-pipeline" },
+  { label: "Agentic AI", href: "/#platform" },
   { label: "Case Studies", href: "/#case-study" },
 ];
 

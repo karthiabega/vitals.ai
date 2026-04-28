@@ -5,10 +5,10 @@ import { Link, useLocation } from "react-router-dom";
 import Logo from "./Logo";
 
 const hashLinks = [
+  { label: "Consortium", href: "/#consortium", id: "consortium" },
   { label: "Pipeline", href: "/#aphop-pipeline", id: "aphop-pipeline" },
   { label: "Solutions", href: "/#solutions", id: "solutions" },
   { label: "Platform", href: "/#platform", id: "platform" },
-  { label: "Consortium", href: "/#consortium", id: "consortium" },
   { label: "Case Study", href: "/#case-study", id: "case-study" },
 ];
 
