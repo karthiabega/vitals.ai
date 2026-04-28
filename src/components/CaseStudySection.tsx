@@ -132,6 +132,40 @@ const caseStudies: CaseStudy[] = [
     accentFrom: "from-violet-500/20",
     accentVia: "via-violet-400/60",
   },
+  {
+    id: 4,
+    tabLabel: "Fraud Detection",
+    title: "Health Insurance Fraud Detection Engine",
+    tech: ["ML Anomaly Detection", "Network Analysis", "Claims Analytics", "Rules Engine"],
+    problem:
+      "Health insurance fraud — false claims, upcoding, duplicate billing, and provider collusion — is difficult to catch at scale. Manual review is too slow and misses coordinated patterns spread across large claim volumes.",
+    whatWeDid: [
+      "Built an ML-powered claims analysis engine that detects anomalous billing patterns across provider, patient, and procedure dimensions.",
+      "Designed graph-based network analysis to surface coordinated fraud rings — identifying suspicious relationships between providers, facilities, and beneficiaries.",
+      "Layered a configurable rules engine on top of ML scores to prioritise high-risk claims for investigator review, significantly reducing manual workload.",
+      "Generated explainable fraud scores with supporting evidence trails, enabling faster adjudication decisions and defensible audit documentation.",
+    ],
+    outcome: "Faster, more accurate fraud detection with a prioritised review queue — reducing fraudulent payouts and cutting investigator workload.",
+    flowTop: [
+      { Icon: Database,  label: "Claims Intake",       sublabel: "Incoming insurance claims" },
+      { Icon: Layers,    label: "Data Enrichment",     sublabel: "Provider & patient history" },
+      { Icon: Filter,    label: "Anomaly Detection",   sublabel: "ML flags suspicious patterns" },
+    ],
+    flowBranch: { Icon: Bot, label: "Fraud Scoring Engine", sublabel: "Risk score + evidence", highlight: true },
+    flowBottom: [
+      { Icon: Shield,    label: "Investigator Queue",  sublabel: "Prioritised high-risk claims" },
+      { Icon: BarChart3, label: "Analytics Dashboard", sublabel: "Trends & pattern reports" },
+      { Icon: CheckCircle, label: "Claim Resolution",  sublabel: "Approve, flag, or reject", highlight: true },
+    ],
+    stats: [
+      { value: "↑",        label: "Detection Accuracy" },
+      { value: "↓",        label: "False Positive Rate" },
+      { value: "60%",      label: "Less Manual Review" },
+      { value: "Real-time", label: "Claim Scoring" },
+    ],
+    accentFrom: "from-rose-500/20",
+    accentVia: "via-rose-400/60",
+  },
 ];
 
 // ── Flow node card: icon centered above text ─────────────────────
