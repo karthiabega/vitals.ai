@@ -133,7 +133,7 @@ const Footer = () => {
             <a href="https://www.linkedin.com/company/114723977/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-muted-foreground hover:text-primary transition-colors">
               <LinkedInIcon />
             </a>
-            <a href="#" aria-label="Facebook" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="https://www.facebook.com/profile.php?id=61588824276068" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-muted-foreground hover:text-primary transition-colors">
               <FacebookIcon />
             </a>
           </div>
