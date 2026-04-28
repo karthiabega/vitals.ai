@@ -64,7 +64,7 @@ const stats = [
     prefix: "",
     suffix: "",
     label: "Turnkey Projects Delivered",
-    sublabel: "End-to-end  health deployments",
+    sublabel: "End-to-end health deployments",
     iconBg: "from-primary/20 to-emerald-500/10",
     delay: 0,
   },
@@ -74,7 +74,7 @@ const stats = [
     prefix: "",
     suffix: "%",
     label: "Cost Reduction",
-    sublabel: "Across state health operations",
+    sublabel: "Across healthcare operations",
     iconBg: "from-primary/20 to-cyan-500/10",
     delay: 0.15,
   },
@@ -84,7 +84,7 @@ const stats = [
     prefix: "",
     suffix: "%",
     label: "Improved Medication Adherence",
-    sublabel: "Across ABDM-linked patient cohorts",
+    sublabel: "Across monitored patient populations",
     iconBg: "from-primary/20 to-teal-500/10",
     delay: 0.3,
   },
@@ -123,7 +123,7 @@ const HeroSection = () => {
         >
           <Activity size={14} className="text-primary animate-pulse" />
           <span className="text-xs font-semibold text-primary tracking-wider uppercase">
-            Sovereign AI Infrastructure for India
+            Health Intelligence Platform for India
           </span>
         </motion.div>
 
@@ -133,7 +133,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="font-heading text-4xl md:text-6xl lg:text-7xl font-bold leading-tight max-w-5xl mx-auto mb-8"
         >
-          The Agentic Layer for{" "}
+          Intelligent Infrastructure for{" "}
           <span className="text-gradient">Health</span>{" "}
           and Governance.
         </motion.h1>
@@ -144,8 +144,8 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-12 leading-relaxed"
         >
-          Moving beyond reactive systems to autonomous, predictive infrastructure.
-          We deploy specialized AI agents to safeguard and scale India's digital future.
+          From data ingestion to coordinated response — we build intelligent systems
+          that help health organizations make faster, better-informed decisions at scale.
         </motion.p>
 
         <motion.div

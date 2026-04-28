@@ -303,7 +303,7 @@ const UseCase = () => {
               <span className="text-gradient">{useCase.label}</span>?
             </h2>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Connect with our team to explore how this solution can be tailored for your state's health infrastructure.
+              Connect with our team to explore how this solution can be tailored for your organization.
             </p>
             <Link
               to="/contact"

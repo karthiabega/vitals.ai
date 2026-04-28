@@ -24,7 +24,7 @@ export const useCasesData: Record<UseCaseSlug, UseCase> = {
     iconName: "Activity",
     tagline: "AI-Powered Multi-Disease Diagnostic Intelligence at Population Scale",
     overview:
-      "Our disease classification engine leverages multi-modal AI models trained on India's IDSP data streams, clinical records, and environmental indicators. We transform heterogeneous health data into precise, actionable disease classifications across 30+ disease categories—enabling  health departments to respond proactively rather than reactively.",
+      "Our classification engine processes clinical records, lab results, and surveillance data to automatically identify disease patterns across 30+ categories. Health teams get earlier visibility into emerging cases — with confidence scores and supporting evidence for every classification.",
     features: [
       {
         title: "Multi-Disease ICD-11 Mapping",
@@ -91,7 +91,7 @@ export const useCasesData: Record<UseCaseSlug, UseCase> = {
     iconName: "Radar",
     tagline: "Predict Outbreaks Before They Happen — Up to 14 Days in Advance",
     overview:
-      "Our predictive surveillance system fuses environmental data, vector indices, mobility patterns, and historical outbreak records to identify disease hotspots before they manifest clinically. Built on India's epidemiological landscape, we deliver 14-day outbreak predictions for Dengue, Malaria, Typhoid, and emerging infectious diseases—giving health departments the critical lead time they need to act.",
+      "Our predictive surveillance system fuses environmental data, vector indices, mobility patterns, and historical records to identify disease hotspots before they manifest clinically. Using India's surveillance data and disease patterns, we forecast outbreaks up to 14 days in advance — giving health teams time to deploy preventive measures before cases escalate.",
     features: [
       {
         title: "Multi-Source Fusion Engine",
@@ -108,7 +108,7 @@ export const useCasesData: Record<UseCaseSlug, UseCase> = {
       {
         title: "14-Day Prediction Window",
         description:
-          "Advanced time-series forecasting models provide a 14-day early warning window—critical for preventive  health action.",
+          "14-day outbreak predictions that give health teams time to deploy preventive measures before cases escalate.",
         iconName: "Calendar",
       },
       {
@@ -158,7 +158,7 @@ export const useCasesData: Record<UseCaseSlug, UseCase> = {
     iconName: "Pill",
     tagline: "Ensuring Treatment Completion Across Populations of Millions",
     overview:
-      "Medication non-adherence is a silent crisis in health—especially for chronic disease management and communicable disease treatment like TB-DOTS. Our AI-driven adherence platform monitors patient treatment journeys at population scale, proactively identifies at-risk patients, and deploys autonomous interventions to ensure treatment completion.",
+      "Poor medication adherence undermines treatment outcomes across chronic diseases, TB programs, and long-term therapies. Our platform monitors patient treatment journeys at scale, identifies at-risk patients early, and triggers timely interventions to improve completion rates.",
     features: [
       {
         title: "Population-Scale Monitoring",
@@ -167,9 +167,9 @@ export const useCasesData: Record<UseCaseSlug, UseCase> = {
         iconName: "Users",
       },
       {
-        title: "Autonomous Follow-Up Agents",
+        title: "AI-Powered Follow-Up",
         description:
-          "AI agents conduct automated follow-ups via IVR, SMS, and ASHA worker app integrations to re-engage defaulters.",
+          "AI agents conduct automated follow-ups via IVR, SMS, and ASHA worker app integrations to re-engage patients who have missed doses.",
         iconName: "Bot",
       },
       {
@@ -225,7 +225,7 @@ export const useCasesData: Record<UseCaseSlug, UseCase> = {
     iconName: "GitBranch",
     tagline: "Autonomous Data Ingestion, Cleansing, and Harmonization at Government Scale",
     overview:
-      "Government health data exists in fragmented, heterogeneous formats—paper forms, legacy databases, Excel sheets, and modern APIs. Our intelligent data pipelines use AI to automatically detect data types, infer schemas, cleanse inconsistencies, and harmonize data from dozens of sources into a unified, analytics-ready data layer—without manual ETL engineering.",
+      "Health data across hospitals, clinics, and health agencies exists in incompatible formats — paper, legacy systems, spreadsheets, and APIs. Our pipelines automatically unify this data, cleaning and standardizing it into a single analytics-ready layer without manual engineering overhead.",
     features: [
       {
         title: "AI Schema Detection",
@@ -292,7 +292,7 @@ export const useCasesData: Record<UseCaseSlug, UseCase> = {
     iconName: "Brain",
     tagline: "Automated AI Model Development, Validation, and Sovereign Deployment",
     overview:
-      "Building AI models for healthcare requires deep domain expertise, rigorous validation, and sovereign deployment practices. Our AutoML and model engineering platform accelerates the development of clinical predictive models—from feature engineering to deployment—while ensuring every model meets the explainability and regulatory standards required for government healthcare applications.",
+      "Building AI models for healthcare requires deep domain expertise, rigorous validation, and secure deployment practices. Our AutoML and model engineering platform accelerates the development of clinical predictive models—from feature engineering to deployment—while ensuring every model meets the explainability and regulatory standards required for government healthcare applications.",
     features: [
       {
         title: "Healthcare AutoML",
@@ -348,7 +348,7 @@ export const useCasesData: Record<UseCaseSlug, UseCase> = {
     stats: [
       { value: "50+", label: "Models in Production" },
       { value: "3x", label: "Faster Development" },
-      { value: "99%", label: "Uptime SLA" },
+      { value: "99%", label: "System Uptime" },
       { value: "XAI", label: "Explainable by Default" },
     ],
   },
@@ -357,20 +357,20 @@ export const useCasesData: Record<UseCaseSlug, UseCase> = {
     slug: "agentic-ai-workflows",
     label: "Agentic AI Workflows",
     iconName: "Bot",
-    tagline: "Multi-Agent Systems That Execute, Not Just Suggest",
+    tagline: "Intelligent Workflows That Move From Insight to Action",
     overview:
-      "The era of passive AI is over. Our agentic workflow platform deploys specialized AI agents that autonomously orchestrate complex, multi-step processes across fragmented government systems—from grievance triage to disease response coordination. Built on Large Action Models (LAMs), our agents complete tasks end-to-end with minimal human intervention, reducing administrative burden by up to 40%.",
+      "Our intelligent workflow platform deploys specialized AI agents that handle complex, multi-step processes across health and governance systems — from grievance triage to disease response coordination. Our agents complete tasks end-to-end with configurable human oversight, reducing administrative burden and improving response times.",
     features: [
       {
         title: "Digital Worker Deployment",
         description:
-          "Specialized AI agents act as digital workers—accessing government systems, processing data, and completing tasks autonomously.",
+          "Specialized AI agents act as digital workers — accessing government systems, processing data, and completing tasks end-to-end.",
         iconName: "Bot",
       },
       {
-        title: "Large Action Models (LAMs)",
+        title: "Task Execution",
         description:
-          "LAM-powered agents go beyond conversation to execute multi-step workflows across APIs, databases, and communication channels.",
+          "Our agents execute multi-step workflows across APIs, databases, and communication channels — going beyond recommendations to action.",
         iconName: "Zap",
       },
       {

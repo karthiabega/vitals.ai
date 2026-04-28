@@ -120,9 +120,8 @@ const Contact = () => {
               <span className="text-gradient">Together</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Ready to transform India's  health infrastructure? Our team of
-              sovereign AI specialists is here to help design the right solution for your
-              state.
+              Ready to transform India's health infrastructure? Our team
+              is here to help design the right solution for your organization.
             </p>
           </motion.div>
         </div>
@@ -268,7 +267,7 @@ const Contact = () => {
                           required
                           value={form.email}
                           onChange={handleChange}
-                          placeholder="you@organisation.gov.in"
+                          placeholder="you@organisation.in"
                           className={inputBase}
                         />
                       </div>
@@ -314,7 +313,7 @@ const Contact = () => {
                         rows={5}
                         value={form.message}
                         onChange={handleChange}
-                        placeholder="Tell us about your project, state, and what outcomes you're aiming for…"
+                        placeholder="Tell us about your project and what outcomes you're aiming for…"
                         className={`${inputBase} resize-none`}
                       />
                     </div>

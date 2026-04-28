@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import {
   Activity, Layers, Bot, Network, RefreshCw,
-  Clock, TrendingDown, Heart, GitMerge, Settings,
+  Clock, TrendingDown, Heart,
   ChevronRight, Zap, Timer, Database,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
@@ -85,7 +85,7 @@ const steps: PipelineStep[] = [
         items: ["Epidemiology Reasoning Agent", "Signal Fusion Agent", "Intervention Planning Agent"],
       },
       {
-        name: "Deep Agents",
+        name: "Analytical Agents",
         items: ["Complex Outbreak Attribution", "Cross Pattern Discovery", "Novel Event Detection"],
       },
     ],
@@ -125,8 +125,8 @@ const steps: PipelineStep[] = [
         items: ["Model Retraining", "Outcome Feedback", "Policy Refinement", "Performance KPIs"],
       },
       {
-        name: "Proprietary AI",
-        items: ["Learn & Apply Intelligence", "Adaptive thresholds"],
+        name: "Continuous Learning",
+        items: ["Model updates on new data", "Adaptive thresholds"],
       },
     ],
   },
@@ -166,7 +166,7 @@ const processingEngine = [
     border: "border-violet-500/20",
     bg: "bg-violet-500/5",
     items: [
-      "Risk Score Calculation (ORI)",
+      "Outbreak Risk Scoring",
       "SDOH Overlay",
       "Health Quality Indicators",
       "Entity Resolution",
@@ -189,7 +189,7 @@ const processingEngine = [
 
 const realTimeItems = [
   { label: "S-Form (Syndromic) Alerts",    desc: "Immediate ingestion of fever clusters or respiratory distress spikes from PHCs/CHCs" },
-  { label: "Media & Social Listening",      desc: "Real-time NLP scraping of hyper-local news for keywords" },
+  { label: "Media & Social Monitoring",      desc: "Real-time tracking of local news and social signals for health keywords" },
   { label: "Weather Anomaly Detection",     desc: "Immediate flags for extreme heat or flooding" },
   { label: "Critical Lab (L-Form) Positives", desc: "Instant notification when a high-priority pathogen is confirmed" },
   { label: "ED Utilization",               desc: "Tracking sudden surges in emergency visits at Govt hospitals" },
@@ -234,35 +234,6 @@ const kpis = [
   { value: "↓",      label: "Outbreak Case Fatality Rate (CFR)", Icon: Heart },
 ];
 
-// ── Differentiators data ──────────────────────────────────────────
-
-const differentiators = [
-  {
-    Icon: Bot,
-    title: "Autonomous Decisioning Engine",
-    description:
-      "Deep-agent powered intelligence layer that performs outbreak attribution, signal fusion, and intervention planning — moving beyond static analytics to real-time, context-aware decision making.",
-    gradient: "from-emerald-900/25 via-card to-card",
-    accent: "via-emerald-400/60",
-  },
-  {
-    Icon: GitMerge,
-    title: "Multi-Source Data Fusion",
-    description:
-      "Unified ingestion and processing of clinical (S/P/L), environmental, behavioral, and mobility data — enabling a comprehensive, 360° view of population health risks across geographies.",
-    gradient: "from-cyan-900/25 via-card to-card",
-    accent: "via-cyan-400/60",
-  },
-  {
-    Icon: Settings,
-    title: "Coordinated Field Execution",
-    description:
-      "End-to-end orchestration of health actions including case management, resource allocation, and rapid response deployment — ensuring insights translate into measurable outcomes on the ground.",
-    gradient: "from-teal-900/25 via-card to-card",
-    accent: "via-teal-400/60",
-  },
-];
-
 // ── Helper: dot bullet ────────────────────────────────────────────
 
 const Dot = ({ color = "bg-primary/50" }: { color?: string }) => (
@@ -297,12 +268,12 @@ const APHOPPipelineSection = () => (
           Platform Architecture
         </span>
         <h2 className="font-heading text-3xl md:text-5xl font-bold mb-6 max-w-4xl mx-auto">
-          Autonomous Health{" "}
+          Health{" "}
           <span className="text-gradient">Operations Pipeline</span>
         </h2>
         {/* Stage flow subtitle */}
         <div className="flex flex-wrap items-center justify-center gap-1.5 mb-6">
-          {["Sensing", "Understanding", "Autonomous Decisioning", "Coordinated Execution", "Continuous Learning"].map(
+          {["Sensing", "Understanding", "Decisioning", "Execution", "Learning"].map(
             (stage, i, arr) => (
               <span key={i} className="flex items-center gap-1.5">
                 <span className="text-sm font-semibold text-muted-foreground">{stage}</span>
@@ -312,8 +283,8 @@ const APHOPPipelineSection = () => (
           )}
         </div>
         <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-          A five-stage intelligence pipeline that continuously transforms multi-source signals
-          into coordinated field interventions — with zero manual handoffs.
+          A five-stage pipeline that transforms multi-source health signals
+          into coordinated field interventions — reducing manual effort at every stage.
         </p>
       </motion.div>
 
@@ -394,11 +365,11 @@ const APHOPPipelineSection = () => (
               <Database size={11} className="text-primary" />
             </div>
             <p className="text-xs font-semibold text-muted-foreground">
-              Proprietary AI Engine
+              AI Processing Engine
             </p>
             <span className="text-muted-foreground/30">•</span>
             <p className="text-xs text-muted-foreground/60">
-              Learn &amp; Apply Intelligence — processes all five stages continuously
+              Runs continuously across all five stages
             </p>
           </div>
         </div>
@@ -594,46 +565,6 @@ const APHOPPipelineSection = () => (
                   {kpi.value}
                 </p>
                 <p className="text-xs text-muted-foreground leading-snug">{kpi.label}</p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </motion.div>
-
-      {/* ════════════════════════════════════════════
-          7. SOLUTION DIFFERENTIATORS
-      ════════════════════════════════════════════ */}
-      <motion.div
-        initial={{ opacity: 0, y: 24 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
-      >
-        <p className="text-center text-xs font-semibold text-primary tracking-widest uppercase mb-8">
-          Solution Differentiators
-        </p>
-        <div className="grid md:grid-cols-3 gap-6">
-          {differentiators.map((d, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.12 }}
-              className={`group relative rounded-2xl bg-gradient-to-br ${d.gradient} border border-border hover:border-primary/40 p-8 flex flex-col gap-6 overflow-hidden hover:-translate-y-1.5 transition-all duration-300`}
-            >
-              <div className={`absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent ${d.accent} to-transparent`} />
-              <div className="absolute top-0 left-0 right-0 h-40 bg-gradient-to-b from-primary/4 to-transparent pointer-events-none" />
-              <div className="relative z-10 w-14 h-14 rounded-2xl bg-primary/15 border border-primary/25 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <d.Icon size={26} className="text-primary" />
-              </div>
-              <div className="relative z-10">
-                <h3 className="font-heading text-xl font-bold text-foreground mb-3 leading-snug">
-                  {d.title}
-                </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {d.description}
-                </p>
               </div>
             </motion.div>
           ))}

@@ -29,10 +29,10 @@ const capabilities: Capability[] = [
   },
   {
     Icon: AlertTriangle,
-    title: "Autonomous Triage",
-    shortText: "Real-Time Anomaly Detection",
+    title: "Real-time Triage",
+    shortText: "Anomaly Detection",
     detail:
-      "S, P, and L reporting streams fused with environmental data detect anomalies before they scale into  health crises — zero manual intervention.",
+      "S, P, and L reporting streams fused with environmental data detect anomalies early — enabling faster response before issues escalate.",
     iconAnim: "pulse",
     gradientFront: "from-primary/15 to-amber-500/8",
     gradientBack: "from-amber-900/20 via-card to-card",
@@ -41,9 +41,9 @@ const capabilities: Capability[] = [
   {
     Icon: Database,
     title: "Population Analytics",
-    shortText: "5 Cr+ Citizens, One Platform",
+    shortText: "Population-Scale Analytics",
     detail:
-      "Architected to manage digital health records at massive scale, ensuring full interoperability with the Ayushman Bharat Digital Mission (ABDM).",
+      "Architected to manage digital health records at scale, with built-in interoperability for national health programs including ABDM.",
     iconAnim: "spin",
     gradientFront: "from-primary/15 to-cyan-500/8",
     gradientBack: "from-cyan-900/30 via-card to-card",
@@ -78,12 +78,12 @@ const APHOPSection = () => {
             Solutions
           </span>
           <h2 className="font-heading text-3xl md:text-5xl font-bold mb-6 max-w-4xl mx-auto">
-            The Autonomous Health{" "}
+            The Health{" "}
             <span className="text-gradient">Operations Platform</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            In alignment with the national vision for "One AI Doctor per Person," APHOP
-            serves as the digital nervous system for state-level health departments.
+            APHOP is the intelligence layer for health organizations — connecting data,
+            decisions, and field operations in one unified platform.
           </p>
         </motion.div>
 

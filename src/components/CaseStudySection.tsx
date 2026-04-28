@@ -43,7 +43,7 @@ const caseStudies: CaseStudy[] = [
     title: "Medication Adherence Tracker",
     tech: ["ePrescription", "POS Integration", "Rules Engine", "Tele-health"],
     problem:
-      "Roughly 1 in 5 new prescriptions are never filled, and for those that are, only about half are taken correctly. This silent crisis drives poor patient outcomes and massive avoidable healthcare costs.",
+      "Roughly 1 in 5 new prescriptions are never filled — and of those filled, only half are taken as directed. Poor adherence drives worse patient outcomes and significant avoidable costs.",
     whatWeDid: [
       "Built an adherence platform that intercepts ePrescriptions and automatically matches them against pharmacy POS pickup notifications within a 48-hour window.",
       "Deployed tele-caller workflows where clinical pharmacists proactively reach non-adherent patients to identify and resolve barriers to pickup.",
@@ -85,7 +85,7 @@ const caseStudies: CaseStudy[] = [
       "Stored harmonized data in an enterprise-grade Snowflake data warehouse on Azure with full lineage, data quality scoring, and auditability.",
       "Designed FHIR-native APIs serving downstream UM, CM, member profile, regulatory reporting, and AI/ML consumers with standardized access.",
     ],
-    outcome: "Standardized FHIR R4 data platform powering regulatory reporting, AI/ML pipelines, and care management applications.",
+    outcome: "A unified, standards-based data platform powering regulatory reporting, AI models, and care management — all from one consistent data source.",
     flowTop: [
       { Icon: Network,   label: "External Sources",   sublabel: "Labs, clinics, HIEs" },
       { Icon: Zap,       label: "Kafka Ingestion",    sublabel: "Stream & batch" },

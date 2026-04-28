@@ -17,10 +17,10 @@ interface Feature {
 const features: Feature[] = [
   {
     Icon: Bot,
-    title: "Deep Agents",
-    shortText: "Autonomous Digital Workers",
+    title: "Workflow Agents",
+    shortText: "Automated Digital Workers",
     detail:
-      "We build Digital Workers that autonomously orchestrate multi-step tasks across fragmented government systems—replacing manual handoffs with intelligent, continuous execution.",
+      "We build digital workers that handle multi-step tasks across fragmented systems — reducing manual handoffs and keeping operations running continuously.",
     iconAnim: "bounce",
     gradientFront: "from-primary/15 to-emerald-500/8",
     gradientBack: "from-emerald-900/30 via-card to-card",
@@ -28,10 +28,10 @@ const features: Feature[] = [
   },
   {
     Icon: Zap,
-    title: "Large Action Models",
-    shortText: "Beyond Conversation → Execution",
+    title: "Task Automation",
+    shortText: "From Insight to Action",
     detail:
-      "Our LAM architecture moves from conversational search to automated task completion, cutting administrative burden by up to 40% with measurable, auditable results.",
+      "Our automation layer executes tasks end-to-end — cutting administrative burden with measurable, auditable results.",
     iconAnim: "pulse",
     gradientFront: "from-primary/15 to-cyan-500/8",
     gradientBack: "from-cyan-900/30 via-card to-card",
@@ -39,10 +39,10 @@ const features: Feature[] = [
   },
   {
     Icon: Lock,
-    title: "Sovereign Foundations",
-    shortText: "Data Sovereignty by Design",
+    title: "Secure Infrastructure",
+    shortText: "Data Security by Design",
     detail:
-      "Every agent runs on secure, localized infrastructure ensuring full jurisdictional control. No citizen data ever leaves the state boundary without explicit authorization.",
+      "Agents run on secure, localized infrastructure with full data governance controls — ensuring sensitive health data stays within the appropriate jurisdictional boundaries.",
     iconAnim: "breathe",
     gradientFront: "from-primary/15 to-teal-500/8",
     gradientBack: "from-teal-900/30 via-card to-card",
@@ -67,13 +67,12 @@ const AgenticAISection = () => {
             Platform
           </span>
           <h2 className="font-heading text-3xl md:text-5xl font-bold mb-6 max-w-4xl mx-auto">
-            Agentic AI: The New Operating System for{" "}
-            <span className="text-gradient">State Governance</span>
+            AI-Powered Automation for{" "}
+            <span className="text-gradient">Health Operations</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            The "chatbot" era has reached its limit. In 2026, the focus has shifted to
-            Agentic AI—systems that do not just suggest, but{" "}
-            <span className="text-foreground font-semibold">execute</span>.
+            We build systems that integrate with existing workflows to automate
+            complex health operations — from data processing to field coordination.
           </p>
         </motion.div>
 

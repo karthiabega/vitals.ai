@@ -49,7 +49,7 @@ const Footer = () => {
               <Logo className="mb-5" />
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed max-w-xs mb-5">
-              Architecting sovereign AI infrastructure for India's  health and
+              Building intelligent infrastructure for India's general health and
               governance ecosystem.
             </p>
             <div className="flex flex-col gap-2.5 text-sm text-muted-foreground">
@@ -108,7 +108,7 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-semibold text-foreground mb-5">Get in Touch</h4>
             <p className="text-sm text-muted-foreground mb-5 leading-relaxed">
-              Ready to transform  health infrastructure for your state?
+              Ready to transform health infrastructure for your organization?
             </p>
             <Link
               to="/contact"
@@ -129,7 +129,7 @@ const Footer = () => {
             <a href="#" aria-label="Instagram" className="text-muted-foreground hover:text-primary transition-colors">
               <InstagramIcon />
             </a>
-            <a href="#" aria-label="LinkedIn" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="https://www.linkedin.com/company/114723977/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-muted-foreground hover:text-primary transition-colors">
               <LinkedInIcon />
             </a>
             <a href="#" aria-label="Facebook" className="text-muted-foreground hover:text-primary transition-colors">

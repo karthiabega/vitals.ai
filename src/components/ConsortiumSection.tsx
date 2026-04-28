@@ -20,7 +20,7 @@ const pillars: Pillar[] = [
     title: "Data Intelligence",
     shortText: "Unstructured → Predictive",
     detail:
-      "Converting vast government datasets into predictive governance tools. Trusted by Fortune 100 enterprises for mission-critical analytics pipelines.",
+      "Converting fragmented health datasets into reliable, predictive tools — with a track record delivering analytics pipelines for healthcare organizations.",
     iconAnim: "float",
     gradientFront: "from-primary/15 to-emerald-500/8",
     gradientBack: "from-emerald-900/30 via-card to-card",
@@ -29,9 +29,9 @@ const pillars: Pillar[] = [
   {
     Icon: Link2,
     title: "Decentralized Rails",
-    shortText: "Tamper-Proof Audit Layers",
+    shortText: "Secure Audit Layers",
     detail:
-      "Blockchain verification and immutable ledgers ensuring secure, auditable state data exchanges and full regulatory compliance.",
+      "Immutable audit trails and secure data verification for health data exchanges — ensuring transparency, traceability, and regulatory compliance.",
     iconAnim: "spin",
     gradientFront: "from-primary/15 to-violet-500/8",
     gradientBack: "from-violet-900/20 via-card to-card",
@@ -40,9 +40,9 @@ const pillars: Pillar[] = [
   {
     Icon: Cpu,
     title: "AI Engineering",
-    shortText: "4,000-Person Tech DNA",
+    shortText: "Deep Technical Expertise",
     detail:
-      "Led by engineers with a lineage managing large-scale tech operations for global healthcare and insurance majors. Deep AI product expertise.",
+      "Led by engineers with experience building large-scale tech for healthcare and insurance organizations. Strong AI product and delivery track record.",
     iconAnim: "pulse",
     gradientFront: "from-primary/15 to-cyan-500/8",
     gradientBack: "from-cyan-900/30 via-card to-card",
@@ -53,7 +53,7 @@ const pillars: Pillar[] = [
     title: "Secure Infrastructure",
     shortText: "Sovereign-Grade Security",
     detail:
-      "Modern cloud architecture and sovereign security protocols for sensitive, citizen-facing government platforms. Zero-trust by default.",
+      "Modern cloud architecture and enterprise-grade security controls for sensitive, citizen-facing government platforms. Zero-trust by default.",
     iconAnim: "breathe",
     gradientFront: "from-primary/15 to-teal-500/8",
     gradientBack: "from-teal-900/30 via-card to-card",
@@ -84,8 +84,8 @@ const ConsortiumSection = () => {
             Expertise at <span className="text-gradient">Scale</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            A specialized group of four technical entities providing the depth and
-            credentials required for state-level sovereign AI implementation.
+            A consortium of healthcare and AI specialists bringing deep technical
+            expertise and a proven track record in health technology delivery.
           </p>
         </motion.div>
 

@@ -11,7 +11,7 @@ If you do not agree with any part of these Terms, you must discontinue use of th
   },
   {
     title: "2. Description of Services",
-    body: `TheVitals.ai provides sovereign AI infrastructure solutions for  health and governance, including but not limited to:
+    body: `TheVitals.ai provides AI infrastructure solutions for general health and governance, including but not limited to:
 
 • Disease classification and early detection AI systems.
 • Medication adherence monitoring tools.
