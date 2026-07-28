@@ -142,7 +142,7 @@ const Contact = () => {
               {contactInfo.map((item, i) => (
                 <div
                   key={i}
-                  className="flex items-start gap-4 rounded-2xl border border-border bg-gradient-card p-6 shadow-card"
+                  className="flex items-start gap-4 rounded-2xl  border border-border bg-gradient-card p-6 shadow-card"
                 >
                   <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/15 flex items-center justify-center flex-shrink-0">
                     <item.icon size={22} className="text-primary" />
